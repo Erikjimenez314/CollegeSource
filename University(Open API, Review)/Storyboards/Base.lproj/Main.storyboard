@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jVQ-IA-pCT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--College Search-->
+        <scene sceneID="aNf-hI-O01">
+            <objects>
+                <tableViewController title="College Search" id="7Zf-Xn-XNg" customClass="CollegeTableViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fbs-yk-gas">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" id="2SK-2p-PDp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="collegeCell" rowHeight="487" id="2QA-5O-67B" customClass="CollegeTableViewCell" customModule="CollegeSource" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="487"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2QA-5O-67B" id="mU6-9X-YZo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="487"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-rS-pSZ">
+                                            <rect key="frame" x="20" y="40" width="374" height="207"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Name of College)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luE-fw-62o">
+                                            <rect key="frame" x="139" y="11" width="139" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-KY-Dd8">
+                                            <rect key="frame" x="20" y="255" width="374" height="66.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <string key="text"> (SHORT DESCRIPTION) consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </string>
+                                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" shipmentTrackingNumber="YES"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CIty, State Abbr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vl4-Qc-8RA">
+                                            <rect key="frame" x="20" y="329" width="120" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemGray4Color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-3P-bLD">
+                                            <rect key="frame" x="20" y="455" width="97" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemGray4Color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room And Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGQ-Bv-GmV">
+                                            <rect key="frame" x="265" y="328" width="129" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acceptance Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tC-Ot-1MB">
+                                            <rect key="frame" x="265" y="357" width="130" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Private/Public" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqP-ul-gpO">
+                                            <rect key="frame" x="290" y="386" width="104" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXD-F5-FV2">
+                                            <rect key="frame" x="306" y="40" width="88" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="luE-fw-62o" id="uPX-lN-EVe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7Zf-Xn-XNg" id="h61-EH-Uek"/>
+                            <outlet property="delegate" destination="7Zf-Xn-XNg" id="IKF-ga-eqP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="3IJ-vc-jz7"/>
+                    <connections>
+                        <outlet property="searchBar" destination="2SK-2p-PDp" id="xTh-7V-1IB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Pk-CV-xsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="-19"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="6aX-Yf-WxR">
+            <objects>
+                <navigationController id="Rwi-1a-SPG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="fR7-8z-Qir">
+                        <imageReference key="image" image="map.fill" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="map.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oaZ-Yk-iPO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bgp-Jk-0u8" kind="relationship" relationship="rootViewController" id="eN7-ll-P9I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khE-Wg-Ssd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="94"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oF4-P7-qFM">
+            <objects>
+                <tabBarController id="jVQ-IA-pCT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YXf-7e-7lq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.075379945337772369" green="0.061363339424133301" blue="0.25613999366760254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" red="0.079073242843151093" green="0.063533425331115723" blue="0.28093606233596802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mzu-Db-L6u" kind="relationship" relationship="viewControllers" id="TBo-rs-gjN"/>
+                        <segue destination="Rwi-1a-SPG" kind="relationship" relationship="viewControllers" id="MmK-52-nL0"/>
+                        <segue destination="46a-dU-Qxf" kind="relationship" relationship="viewControllers" id="FGa-rx-whm"/>
+                        <segue destination="a6X-Of-0D3" kind="relationship" relationship="viewControllers" id="5ql-hw-WCp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOw-Eo-3t8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-697"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="bH2-HP-ME8">
+            <objects>
+                <navigationController id="mzu-Db-L6u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" springLoaded="YES" id="gqO-bW-0TO">
+                        <imageReference key="image" image="building.columns" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="building.columns" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUK-4A-Wah">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7Zf-Xn-XNg" kind="relationship" relationship="rootViewController" id="TuI-0B-p3c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2D-Hh-TaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="94"/>
+        </scene>
+        <!--Other-->
+        <scene sceneID="nJf-5T-tgU">
+            <objects>
+                <navigationController id="a6X-Of-0D3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Other" id="pug-yX-WGM">
+                        <imageReference key="image" image="ellipsis" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="ellipsis" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="CollegeImage" id="PBs-bg-7cL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZqC-9j-QTH" kind="relationship" relationship="rootViewController" id="twl-Kd-tGw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHb-Jv-KDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="94"/>
+        </scene>
+        <!--Tweets-->
+        <scene sceneID="XLU-wd-mvj">
+            <objects>
+                <navigationController id="46a-dU-Qxf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tweets" id="cCo-t1-k6y">
+                        <imageReference key="image" image="cursorarrow.motionlines" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="cursorarrow.motionlines" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lrb-fx-pYQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="utZ-ZE-ckW" kind="relationship" relationship="rootViewController" id="MX7-pn-paz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgQ-Px-fEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="94"/>
+        </scene>
+        <!--Your College Search-->
+        <scene sceneID="n7N-Se-F8T">
+            <objects>
+                <viewController id="GSL-Y8-ZNg" customClass="CollegeTableViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xeu-tE-efg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" showsSearchResultsButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLp-q3-yJf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WiH-CL-tOI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your College Search" id="sEe-EV-d7E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vA-GH-4hX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="822"/>
+        </scene>
+        <!--Account Detail View Controller-->
+        <scene sceneID="S5M-M8-hdN">
+            <objects>
+                <viewController id="w2e-z5-HdF" customClass="AccountDetailViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7n0-Om-5iL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Name Label)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huL-SJ-YW2">
+                                <rect key="frame" x="20" y="88" width="145" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="(body text view)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-2d-gh4">
+                                <rect key="frame" x="87" y="153" width="240" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHC-dC-2Gw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XP4-vg-2TL"/>
+                    <connections>
+                        <outlet property="collegeBodyTextView" destination="fc7-2d-gh4" id="OuB-hm-io9"/>
+                        <outlet property="collegeNameLabel" destination="huL-SJ-YW2" id="5Zz-oE-X7E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCi-9T-PLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3891.3043478260875" y="839.73214285714278"/>
+        </scene>
+        <!--Tweets -->
+        <scene sceneID="HBT-cC-MTb">
+            <objects>
+                <viewController id="utZ-ZE-ckW" customClass="LatestNewsViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a15-Fy-dxp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewScapes1" translatesAutoresizingMaskIntoConstraints="NO" id="VeI-I3-Cox">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JW-Av-Lpo">
+                                <rect key="frame" x="107" y="325" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BBC  News">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BBCTapped:" destination="utZ-ZE-ckW" eventType="touchUpInside" id="9uh-V6-sMv"/>
+                                    <segue destination="kJG-vn-QLz" kind="push" id="f9Q-th-H5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGw-zg-lAK">
+                                <rect key="frame" x="107" y="428" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.080146543681621552" green="0.95693486928939819" blue="0.56950730085372925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Student U">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="StudentUniverseTapped:" destination="utZ-ZE-ckW" eventType="touchUpInside" id="rMV-pn-b6x"/>
+                                    <segue destination="i01-lg-QAd" kind="push" id="OXW-L9-bDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkH-mm-HeR">
+                                <rect key="frame" x="107" y="228" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.028697874040000002" green="0.35982414800000001" blue="0.97305089239999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="New Scientist">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="NewScientistTapped:" destination="utZ-ZE-ckW" eventType="touchUpInside" id="nec-nx-itB"/>
+                                    <segue destination="Cwk-5Y-P0d" kind="push" id="9qc-qs-BJC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-hD-VdO">
+                                <rect key="frame" x="107" y="144" width="200" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule" titleAlignment="center">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Huff Post">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="13" name="Palatino-Roman"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HuffPostTapped:" destination="utZ-ZE-ckW" eventType="touchUpInside" id="hcu-u4-nug"/>
+                                    <segue destination="O4a-gC-oqV" kind="push" id="gGN-Pn-A21"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v0z-sG-9yd"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VeI-I3-Cox" firstAttribute="trailing" secondItem="v0z-sG-9yd" secondAttribute="trailing" id="P2l-MJ-1Ns"/>
+                            <constraint firstItem="VeI-I3-Cox" firstAttribute="leading" secondItem="v0z-sG-9yd" secondAttribute="leading" id="rem-9p-zIP"/>
+                            <constraint firstAttribute="bottom" secondItem="VeI-I3-Cox" secondAttribute="bottom" id="sDX-ik-2bW"/>
+                            <constraint firstItem="VeI-I3-Cox" firstAttribute="top" secondItem="a15-Fy-dxp" secondAttribute="top" id="wL8-99-AAt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tweets " leftItemsSupplementBackButton="YES" id="rmn-F3-F1b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzf-T7-cB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2243.4782608695655" y="821.65178571428567"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="gcl-oR-oGW">
+            <objects>
+                <tableViewController id="ZqC-9j-QTH" customClass="AccountTableViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="e7K-D4-GaY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="HVW-Xr-kXp">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HVW-Xr-kXp" id="uDQ-TQ-ZC2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="w2e-z5-HdF" kind="show" identifier="accountTableViewToDetail" id="jlC-r6-VVb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZqC-9j-QTH" id="fom-7N-cd0"/>
+                            <outlet property="delegate" destination="ZqC-9j-QTH" id="kVE-Q5-Occ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Account" id="ZZA-vi-fTq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDP-0q-Dbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3063.768115942029" y="821.65178571428567"/>
+        </scene>
+        <!--Huff Post View Controller-->
+        <scene sceneID="Yi4-Fb-gji">
+            <objects>
+                <viewController storyboardIdentifier="HuffPostViewController" id="O4a-gC-oqV" customClass="HuffPostViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ct-3l-cqP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1v-ID-v0u">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9NM-AS-Yr8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O1v-ID-v0u" firstAttribute="top" secondItem="9NM-AS-Yr8" secondAttribute="top" id="CeT-1s-TRQ"/>
+                            <constraint firstItem="9NM-AS-Yr8" firstAttribute="bottom" secondItem="O1v-ID-v0u" secondAttribute="bottom" id="eDA-cF-LJs"/>
+                            <constraint firstItem="O1v-ID-v0u" firstAttribute="leading" secondItem="9NM-AS-Yr8" secondAttribute="leading" id="eeG-7Y-LgV"/>
+                            <constraint firstItem="9NM-AS-Yr8" firstAttribute="trailing" secondItem="O1v-ID-v0u" secondAttribute="trailing" id="tK8-UC-TsZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IDL-ay-EpG"/>
+                    <connections>
+                        <outlet property="huffPostWebView" destination="O1v-ID-v0u" id="BiW-AV-yFg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9H-Wg-hJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="1659"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YaD-88-pj3">
+            <objects>
+                <viewController storyboardIdentifier="BBCViewController" id="kJG-vn-QLz" customClass="BBCViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZi-gf-42s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-mE-pn4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DGR-QH-0wO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DGR-QH-0wO" firstAttribute="bottom" secondItem="gYO-mE-pn4" secondAttribute="bottom" id="Sj7-9A-jSO"/>
+                            <constraint firstItem="gYO-mE-pn4" firstAttribute="top" secondItem="DGR-QH-0wO" secondAttribute="top" id="dJL-sv-OM4"/>
+                            <constraint firstItem="gYO-mE-pn4" firstAttribute="leading" secondItem="DGR-QH-0wO" secondAttribute="leading" id="fBG-eN-5UN"/>
+                            <constraint firstItem="DGR-QH-0wO" firstAttribute="trailing" secondItem="gYO-mE-pn4" secondAttribute="trailing" id="pVq-Jx-Der"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yTJ-ST-FO2"/>
+                    <connections>
+                        <outlet property="bbcWebView" destination="gYO-mE-pn4" id="5dF-0d-945"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqH-zU-3nJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="1659"/>
+        </scene>
+        <!--Student Universe View Controller-->
+        <scene sceneID="fpG-g9-wjB">
+            <objects>
+                <viewController storyboardIdentifier="StudentUniverseViewController" id="i01-lg-QAd" customClass="StudentUniverseViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xu-jR-0Fn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-7m-ruV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aad-HS-Qff"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aad-HS-Qff" firstAttribute="bottom" secondItem="ndf-7m-ruV" secondAttribute="bottom" id="9Em-o4-kPR"/>
+                            <constraint firstItem="ndf-7m-ruV" firstAttribute="top" secondItem="aad-HS-Qff" secondAttribute="top" id="AJ8-5g-icN"/>
+                            <constraint firstItem="aad-HS-Qff" firstAttribute="trailing" secondItem="ndf-7m-ruV" secondAttribute="trailing" id="QEI-Zi-cfh"/>
+                            <constraint firstItem="ndf-7m-ruV" firstAttribute="leading" secondItem="aad-HS-Qff" secondAttribute="leading" id="xoh-mI-ogA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pz5-oT-c5R"/>
+                    <connections>
+                        <outlet property="studentUniverseWebView" destination="ndf-7m-ruV" id="U0E-8B-bGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVp-Ds-sHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3214" y="1659"/>
+        </scene>
+        <!--New Scientist View Controller-->
+        <scene sceneID="Ii5-XQ-7Dm">
+            <objects>
+                <viewController storyboardIdentifier="NewScientistViewController" id="Cwk-5Y-P0d" customClass="NewScientistViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80k-eV-csp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dw-XM-vkk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YBs-0F-c98"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBs-0F-c98" firstAttribute="bottom" secondItem="1Dw-XM-vkk" secondAttribute="bottom" id="JeG-Gg-efo"/>
+                            <constraint firstItem="YBs-0F-c98" firstAttribute="trailing" secondItem="1Dw-XM-vkk" secondAttribute="trailing" id="caZ-Xa-RHG"/>
+                            <constraint firstItem="1Dw-XM-vkk" firstAttribute="leading" secondItem="YBs-0F-c98" secondAttribute="leading" id="kXt-bV-GfI"/>
+                            <constraint firstItem="1Dw-XM-vkk" firstAttribute="top" secondItem="YBs-0F-c98" secondAttribute="top" id="zmY-70-382"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dFN-lv-YeZ"/>
+                    <connections>
+                        <outlet property="newScientistWebView" destination="1Dw-XM-vkk" id="7oA-Gj-9jO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHJ-tX-jPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4023" y="1659"/>
+        </scene>
+        <!--MapKit Zipcode Search-->
+        <scene sceneID="FtA-VR-3Du">
+            <objects>
+                <viewController id="bgp-Jk-0u8" customClass="MapSearchViewController" customModule="CollegeSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUN-nE-DM1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lq0-9X-CwD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bgp-Jk-0u8" id="6TS-KV-2AO"/>
+                                </connections>
+                            </mapView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="blackTranslucent" text="enter zipcode here ..." showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJ3-jV-eVg">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDx-se-ahC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lq0-9X-CwD" firstAttribute="top" secondItem="gUN-nE-DM1" secondAttribute="top" id="5tO-k3-4T6"/>
+                            <constraint firstItem="lq0-9X-CwD" firstAttribute="leading" secondItem="CDx-se-ahC" secondAttribute="leading" id="QIF-ui-mhh"/>
+                            <constraint firstAttribute="bottom" secondItem="lq0-9X-CwD" secondAttribute="bottom" id="YrZ-OY-NZ4"/>
+                            <constraint firstItem="lq0-9X-CwD" firstAttribute="trailing" secondItem="CDx-se-ahC" secondAttribute="trailing" id="r7J-tw-dVk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MapKit Zipcode Search" id="BQx-y1-OEv"/>
+                    <connections>
+                        <outlet property="mapView" destination="lq0-9X-CwD" id="sqE-FC-hoi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuc-46-Dlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.50724637681162" y="821.65178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CollegeImage" width="1002" height="1336"/>
+        <image name="NewScapes1" width="1388" height="1022"/>
+        <image name="building.columns" catalog="system" width="128" height="113"/>
+        <image name="cursorarrow.motionlines" catalog="system" width="128" height="121"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
